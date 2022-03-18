@@ -5,11 +5,11 @@ const heroes = {
     },
     iron:{
         nombre :'Iroman',
-        poder  :'Aguantar inyecciones sin morir'
+        poder  :'Iroman inyecciones sin morir'
     },
     spider:{
-        nombre :'Capitan America',
-        poder  :'Aguantar inyecciones sin morir'
+        nombre :'spider',
+        poder  :'spider inyecciones sin morir'
     },
 
 }

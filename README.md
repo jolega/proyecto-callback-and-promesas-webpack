@@ -1,5 +1,5 @@
 # webpack-inicial
-este es un cascaron de un proyecto de webpack
+este es un proyecto de callback y promesas con webpack
 
 
 
