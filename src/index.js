@@ -2,7 +2,7 @@
 import {buscarHeroe as buscarHeroePromesas} from  './js/promesas'
 import './styles.css';
 
-const heroeId1 = 'capi2'
+const heroeId1 = 'capi'
 const heroeId2 = 'spider'
 
 // buscarHeroe(heroeId1, (err, heroe1) => {
@@ -17,6 +17,9 @@ const heroeId2 = 'spider'
 
 // } );
 
-buscarHeroePromesas(heroeId1).then(heroe=> {
-    console.log(`Enviando a ${heroe.nombre} a la mision`);
+buscarHeroePromesas(heroeId1).then(heroe1=> {
+    //console.log(`Enviando a ${heroe.nombre} a la mision`);
+    buscarHeroePromesas(heroeId2).then(heroe2=> {
+        console.log(`enviado a ${heroe1.nombre} y ${heroe2.nombre} a la mision`)
+    })
 })
