@@ -30,6 +30,20 @@ export const buscarHeroe = (id) =>{
     
 }
 
+export const buscarHeroeAsync = async (id) =>{ //Async por defecto retorna una promesa
+
+    const heroe = heroes[id]; // selecciona el campo por id
+  
+  
+        if(heroe){
+           return heroe; // equivalente a     resolve(heroe); en promedas
+        }
+        else{
+            throw error (`no existe un heroe con el id ${ id }` ); // throw Error me da la posicion en donde se comentio el error
+        }
+
+    
+}
 
 const promesaLenta = new Promise ( (resolve, reject) => {
 
