@@ -1,6 +1,7 @@
 import './styles.css';
-import { obtenerHeroesArr } from './js/await';
+import { obtenerHeroesArr, obtenerHeroeAwait } from './js/await';
 
 
-obtenerHeroesArr().then( heroes =>  console.table( heroes ) ); 
-
+obtenerHeroeAwait('capi2')
+                    .then( heroes =>  console.log( heroes ) )
+                    .catch( err =>  console.warn( err ) );
